@@ -14,8 +14,8 @@ from scipy.sparse import csr_matrix
 from scipy.sparse.linalg import svds
 from sklearn.preprocessing import normalize
 
-DATA_DIR = Path(r"C:\Users\ballr\Downloads\CSC4740\ml-1m")
-RESULTS_DIR = Path(__file__).parent / "results"
+DATA_DIR = Path(__file__).parent.parent / "ml-1m" / "ml-1m"
+RESULTS_DIR = Path(__file__).parent.parent / "results"
 SEED = 42
 TRAIN_FRAC, VAL_FRAC = 0.8, 0.1
 GROUP_BINS = [0, 19, 100, np.inf]  # <20, 20-100, >100 training ratings
